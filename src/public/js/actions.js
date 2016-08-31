@@ -1,13 +1,13 @@
 const SET_CREDENTIALS = 'SET_CREDENTIALS'
 
-const setCrendentials = (credentials) => {
+const setCredentials = (credentials) => {
   return {
     ...credentials,
     type: SET_CREDENTIALS
   }
 }
 
-default export {
+export default {
   SET_CREDENTIALS,
-  setCrendentials
+  setCredentials
 }

@@ -1,10 +1,10 @@
-import { SET_CREDENTIALS } from './actions'
+import actions from './actions'
 
 const reducer = (state, action) => {
   state = state || {}
 
   switch (action.type) {
-    case SET_CREDENTIALS:
+    case actions.SET_CREDENTIALS:
       const { username, password } = action
       state = {
         ...state,
