@@ -14,7 +14,6 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
 if (!isProduction) {
-  console.log(publicDir)
   app.use('/js/index.dist.js', babelify('src/public/js/index.js', [], { presets: ['es2015', 'react', 'stage-0'] }))
   app.use(sassMiddleware({
     src: path.join(publicDir),
